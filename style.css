@@ -1,0 +1,136 @@
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+    --primary-gradient: linear-gradient(135deg, #ef4444 0%, #7c3aed 100%);
+    --cta-gradient: linear-gradient(90deg, #1e3a8a 0%, #ef4444 100%);
+    --green-border: #22c55e;
+    --card-bg: #fff;
+    --card-text: #000;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+header {
+    background: var(--primary-gradient);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    border: 3px solid var(--green-border);
+    border-radius: 12px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background: #111;
+}
+
+.video-container > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cta-button {
+    display: none;
+    background: var(--cta-gradient);
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.2s;
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+}
+
+.testimonials {
+    margin-top: 60px;
+    text-align: left;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.testimonial-card {
+    background: var(--card-bg);
+    color: var(--card-text);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #f59e0b;
+    margin-bottom: 10px;
+}
+
+.faq {
+    margin-top: 60px;
+    text-align: left;
+}
+
+.faq-item {
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 22px; }
+    .subtitle { font-size: 14px; }
+}
